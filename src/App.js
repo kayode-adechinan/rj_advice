@@ -6,7 +6,9 @@ export class App extends Component {
   };
 
   componentDidMount() {
-    this.fetchAdvice();
+    // this.fetchAdvice();
+
+    setInterval(() => this.fetchAdvice(), 3000);
   }
 
   fetchAdvice = () => {
